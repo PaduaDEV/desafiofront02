@@ -1,0 +1,45 @@
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+   }
+  
+  /* Estilo para cada div dentro do main */
+  main div {
+    background-color: beige;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    margin-top: 120px;
+    width: 300px;
+   
+    text-align: center;
+  }
+  
+  /* Estilo para o h2 dentro de cada div */
+  main div h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+
+  
+  /* Estilo para o p dentro de cada div */
+  main div p {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para o strong dentro de cada div */
+  main div strong {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,59 @@
+<h1>MATRÍCULA GRÁTIS</h1>
+<div class="form-box">
+ 
+  <form action="#" (submit)="submit()">
+    <div>
+      <label>Nome:</label>
+      <input type="text" name="nome" [(ngModel)]="nome">
+    </div>
+    <div>
+      <label>E-mail:</label>
+      <input type="email" name="email" [(ngModel)]="email">
+    </div>
+    <!-- <div>
+      <input type="radio" id="marketing" name="fav_language" value="marketing">
+      <label for="marketing">ACEITO RECEBER EMAIL COM MATERIAL ADICIONAL</label>
+    </div> -->
+    <div>
+      <label>Senha:</label>
+      <input type="password" name="senha" [(ngModel)]="senha">
+    </div>
+    
+    <div>
+      <label>Curso:</label>
+      <select name="curso" [(ngModel)]="curso">
+        <option value="PHP">PHP</option>
+        <option value="ANGULAR">ANGULAR</option>
+        <option value="JAVASCRYPT">JAVASCRYPT</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="LARAVEL">LARAVEL</option>
+      </select>
+    </div>
+    
+    <div>
+      <label>Carga Horária:</label>
+      <select name="cargaHoraria" [(ngModel)]="cargaHoraria" (change)="onChangeCargaHoraria()">
+        <option value="20">20 horas</option>
+        <option value="40">40 horas</option>
+        <option value="60">60 horas</option>
+      </select>
+    </div>
+    
+    <div>
+      <label>Valor:</label>
+      <input type="number" [(ngModel)]="cargaHoraria" (input)="onChangeCargaHoraria()" name="cargaHoraria" required>
+    
+    </div>
+    
+    <button type="submit">Enviar</button>
+    
+   
+    <div *ngIf="loading">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">ENVIANDO....</span>
+      </div>
+    </div>
+  </form>
+</div>
+
